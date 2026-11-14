@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#faf9f3">
+  <title>Sugargoo spreadsheet – Kategorien, Maße und QC prüfen</title>
+  <meta name="description" content="Das Sugargoo spreadsheet auf Deutsch erklärt: zehn Produktkategorien bei HipoBuyFind, Tipps zu Größen und QC-Fotos sowie eine Checkliste für den Versand.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Sugargoo spreadsheet – Kategorien, Maße und QC prüfen">
+  <meta property="og:description" content="Zehn Kategorien bei HipoBuyFind und ein Einkaufsleitfaden zu Produktlinks, Größen, QC-Fotos und Versand.">
+  <!-- Recherche: Die Google-Ergebnisseite war nicht abrufbar. Die verfügbaren Websuchtreffer liefern Themen, keine bestätigten Google-Platzierungen.
+       sugargo.net (Kategorien); sugargooo.com (Produktlinks); rep.tools (Link-Handhabung); sugargoo.org (Katalog);
+       sugagoo.com (Varianten); spreadsheet-sugargoo.com (Kategoriesuche); sugargoo.work (Link- und Fotoprüfung);
+       repsheet.net (QC-Fotos); sugargoox.com (Größen und Versandplanung); sugargoo.io (Produktbilder).
+       Vier Nebenbegriffe: Sugargoo Produktlinks, Sugargoo Sneaker, Sugargoo QC-Fotos, Sugargoo Versandkosten. -->
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#faf9f3;color:#242a29;font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    a{color:#15434a;text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #9c4918;outline-offset:3px}
+    img{display:block;width:100%;height:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12}
+    h1{font-size:clamp(2.35rem,6vw,5rem);letter-spacing:-.065em;max-width:12ch}
+    h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:1rem}
+    h3{font-size:1.16rem;margin-bottom:.55rem}
+    .mast{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem 1rem;padding-block:.85rem;border-bottom:1px solid #b8c4be}
+    .mast a{font-weight:800}
+    .mast span,figcaption,small{font-size:.88rem}
+    .layout{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(1rem,4vw,3.25rem);align-items:start;padding-block:2rem}
+    .intro{max-width:55ch;margin:.9rem 0 1.35rem}
+    .cover{background:#dbe8e3;border-radius:1rem;overflow:hidden}
+    .cover img{aspect-ratio:1;object-fit:contain;background:#fff}
+    figcaption{padding:.6rem .8rem}
+    .cats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;list-style:none;padding:0;margin:0}
+    .cats a{display:flex;align-items:center;height:100%;min-height:2.8rem;padding:.4rem .7rem;border:1px solid #9fbbb5;border-radius:.45rem;background:#fff;font-weight:650}
+    .cats a:hover{background:#dbe8e3}
+    .band{background:#dbe8e3;padding-block:1.75rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem}
+    .gallery figure{background:#faf9f3;border-radius:.55rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:cover;background:#fff}
+    .gallery .contain{object-fit:contain}
+    .note{margin-bottom:.9rem}
+    .reading,.faq{padding-block:2rem}
+    .topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    article{border-top:3px solid #38716c;padding:.8rem .9rem;background:#fff}
+    article p+p{margin-top:.5rem}
+    details{border-top:1px solid #9fbbb5;padding:.6rem 0}
+    details p{padding:.45rem 0 .25rem}
+    summary{cursor:pointer;font-weight:700;padding:.3rem 0}
+    footer{border-top:1px solid #9fbbb5;padding-block:1.1rem}
+    @media(max-width:52rem){.layout{grid-template-columns:1fr}.cover{max-width:25rem}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:34rem){.topics{grid-template-columns:1fr}.cats a{font-size:.9rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"de",
+    "name":"Sugargoo spreadsheet – Kategorien, Maße und QC prüfen",
+    "mainEntity":[
+      {"@type":"Question","name":"Was ist ein Sugargoo spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Ein Sugargoo spreadsheet ist eine Sammlung von Produktlinks und Kaufhinweisen. Auf dieser Seite findest du einen Leitfaden und zehn Kategorien, die bei HipoBuyFind geöffnet werden."}},
+      {"@type":"Question","name":"Wie prüfe ich, ob ein Produktlink zur gewünschten Variante führt?","acceptedAnswer":{"@type":"Answer","text":"Vergleiche beim Öffnen des Links den Artikelnamen, die Modellnummer, die Farbe und die verfügbare Größe. Speichere den Original-Link und die ausgewählte Variante zusammen."}},
+      {"@type":"Question","name":"Was kann ich auf QC-Fotos erkennen?","acceptedAnswer":{"@type":"Answer","text":"Auf QC-Fotos kannst du sichtbare Merkmale wie Farbe, Nähte, Etikett und Form vergleichen. Die Fotos allein belegen keine Echtheit."}},
+      {"@type":"Question","name":"Wie schätze ich die Versandkosten nach Deutschland?","acceptedAnswer":{"@type":"Answer","text":"Nutze den Rechner des gewählten Versanddienstes mit Zielland, Paketmaßen und Gewicht. Prüfe, ob die Route nach tatsächlichem Gewicht oder Volumengewicht abrechnet und welche Zusatzkosten ausgewiesen werden."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/rdavz/">
+</head>
+<body>
+  <header class="wrap mast">
+    <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+    <span>Deutschsprachiger Einkaufsleitfaden</span>
+  </header>
+  <main>
+    <section class="wrap layout" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Sugargoo spreadsheet</h1>
+        <p class="intro">Finde die passende Kategorie und prüfe danach Artikelvariante, Maße und Fotos. Die Kategorien führen zu HipoBuyFind. Der Leitfaden ist unabhängig von Sugargoo und den gezeigten Marken.</p>
+        <nav aria-labelledby="categories">
+          <h2 id="categories">Produktkategorien</h2>
+          <ul class="cats">
+            <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Schuhe</a></li>
+            <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover</a></li>
+            <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-Shirts</a></li>
+            <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jacken</a></li>
+            <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts</a></li>
+            <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Caps &amp; Mützen</a></li>
+            <li><a href="https://hipobuyfind.com/category-917-Sets.html">Kleidungssets</a></li>
+            <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Unterwäsche</a></li>
+            <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Trikots</a></li>
+            <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires</a></li>
+          </ul>
+        </nav>
+      </div>
+      <figure class="cover">
+        <img src="https://i.ebayimg.com/images/g/SpIAAeSwtz5p~e~X/s-l500.webp" width="500" height="500" alt="Weißer Nike Air Force 1 in der Seitenansicht" fetchpriority="high" loading="eager" decoding="async">
+        <figcaption>Nike Air Force 1 · Seitenprofil als Beispiel für den Modellvergleich</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" aria-labelledby="examples">
+      <div class="wrap">
+        <h2 id="examples">Bildbeispiele für Kleidung und Accessoires</h2>
+        <p class="note">Die Fotos veranschaulichen Schnitt, Muster und Verschlüsse. Die aktuelle Verfügbarkeit prüfst du im jeweiligen Angebot.</p>
+        <div class="gallery">
+          <figure>
+            <img src="https://www.louisvuitton.com/images/is/image/lv/WOMEN_BC_MNG_ANNIV_JAN26_17_DII.jpg?wid=640" width="730" height="913" alt="Person mit schwarzer Jacke, weißer Louis-Vuitton-Cap und gemusterter Schultertasche" loading="lazy" decoding="async">
+            <figcaption>Louis Vuitton · Jacke, Cap und Tasche</figcaption>
+          </figure>
+          <figure>
+            <img class="contain" src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Gucci-Basecap aus Canvas mit GG-Muster" loading="lazy" decoding="async">
+            <figcaption>Gucci · Basecap</figcaption>
+          </figure>
+          <figure>
+            <img class="contain" src="https://assets.hermes.com/is/image/hermesproduct/%E3%82%AB%E3%83%AC-90-%E3%80%8A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AF%E9%9E%8D%E3%81%AE%E4%B8%AD%E3%81%AB%E3%80%8B--004204S%2005-flat-wm-3-0-0-1000-1000_g.jpg" width="1000" height="1000" alt="Flach ausgelegtes, bedrucktes Hermès-Seidentuch Carré 90" loading="lazy" decoding="async">
+            <figcaption>Hermès · Seidentuch</figcaption>
+          </figure>
+          <figure>
+            <img class="contain" src="https://productimg.xbiao.com/jewellery/13/700_450/37397154477297724.jpg" width="700" height="450" alt="Dior-Tribales-Ohrringe mit jeweils zwei unterschiedlich großen Perlen" loading="lazy" decoding="async">
+            <figcaption>Dior · Tribales-Ohrringe</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap reading" aria-labelledby="guides">
+      <h2 id="guides">Vier Kaufchecks vom Produktlink bis zum Paket</h2>
+      <div class="topics">
+        <article>
+          <h3>Sugargoo Produktlinks und Varianten prüfen</h3>
+          <p>Wenn du Produktlinks aus einem Spreadsheet öffnest, vergleiche zuerst den Artikelnamen und die Modellnummer. Halte den Original-Link zum Artikel, die gewählte Farbe und die Größenangabe zusammen fest. Bei einem T-Shirt mit mehreren Prints muss das Vorschaubild nicht zur ausgewählten Farbvariante gehören.</p>
+          <p>Öffnet ein alter Produktlink nur das Schaufenster des Verkäufers, suche erneut nach der Modellnummer. Prüfe Preis und Lieferbarkeit genau für die Variante, die du ausgewählt hast.</p>
+        </article>
+        <article>
+          <h3>Sugargoo Sneaker und Kleidung passend auswählen</h3>
+          <p>Vergleiche bei Sneakern die Fußlänge in Zentimetern mit der Größentabelle des Angebots. Wenn eine Innenlänge angegeben ist, vergleiche sie mit der Einlegesohle eines gut sitzenden Paars.</p>
+          <p>Miss bei Hoodies die Brustweite flach von Achsel zu Achsel. Bei Jacken sind Schulterbreite und Ärmellänge besonders hilfreich, bei Hosen Bundweite und Innenbeinlänge. Vergleiche bei Kleidungssets Oberteil und Hose separat. Für eine Cap ist der verstellbare Kopfumfang entscheidend.</p>
+        </article>
+        <article>
+          <h3>Sugargoo QC-Fotos vor dem Versand lesen</h3>
+          <p>QC steht für Qualitätskontrolle. Vergleiche Lagerfotos mit deiner gewählten Farbe und Größe. Bitte bei unleserlichem Größenetikett um eine Nahaufnahme. Bei Schuhen helfen Ansichten von Zehenpartie, Sohle und beiden Fersen. Bei einer Jacke prüfst du den Reißverschluss, bei Schmuck den Verschluss.</p>
+          <p>Nutze Fotos für sichtbare Merkmale wie Nähte, Form und Zubehör. Bei Markenartikeln prüfst du Kaufbeleg und Herkunft separat. Wenn etwas abweicht, kläre die Rückgabeoptionen vor der Paketfreigabe.</p>
+        </article>
+        <article>
+          <h3>Sugargoo Versandkosten vor der Paketfreigabe schätzen</h3>
+          <p>Für eine Sendung nach Deutschland brauchst du das tatsächliche Paketgewicht und die Außenmaße des gepackten Pakets. Manche Routen rechnen nach Volumengewicht ab. Ein Schuhkarton kann deshalb den Versandpreis verändern, selbst wenn er wenig wiegt.</p>
+          <p>Vergleiche Versandarten mit denselben Paketdaten. Erfasse Warenpreis, Inlandsversand und internationalen Versand einzeln und prüfe Versicherung, Zustellung mit Sendungsverfolgung sowie mögliche Abgaben am Zielort.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap faq" aria-labelledby="questions">
+      <h2 id="questions">Häufige Fragen</h2>
+      <details open>
+        <summary>Was ist ein Sugargoo spreadsheet?</summary>
+        <p>Ein Sugargoo spreadsheet ist eine Sammlung von Produktlinks und Kaufhinweisen. Auf dieser Seite findest du einen Leitfaden und zehn Kategorien, die bei HipoBuyFind geöffnet werden.</p>
+      </details>
+      <details>
+        <summary>Wie prüfe ich, ob ein Produktlink zur gewünschten Variante führt?</summary>
+        <p>Vergleiche beim Öffnen des Links den Artikelnamen, die Modellnummer, die Farbe und die verfügbare Größe. Speichere den Original-Link und die ausgewählte Variante zusammen.</p>
+      </details>
+      <details>
+        <summary>Was kann ich auf QC-Fotos erkennen?</summary>
+        <p>Auf QC-Fotos kannst du sichtbare Merkmale wie Farbe, Nähte, Etikett und Form vergleichen. Die Fotos allein belegen keine Echtheit.</p>
+      </details>
+      <details>
+        <summary>Wie schätze ich die Versandkosten nach Deutschland?</summary>
+        <p>Nutze den Rechner des gewählten Versanddienstes mit Zielland, Paketmaßen und Gewicht. Prüfe, ob die Route nach tatsächlichem Gewicht oder Volumengewicht abrechnet und welche Zusatzkosten ausgewiesen werden.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="wrap">
+    <a href="https://www.hipobuyfind.com">Zum HipoBuyFind-Katalog</a>
+  </footer>
+</body>
+</html>
